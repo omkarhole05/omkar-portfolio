@@ -11,7 +11,7 @@ function Navbar() {
             <div className='cursor-pointer hover:scale-110 transition duration-300'>Education</div>
             <div className='cursor-pointer hover:scale-110 transition duration-300'>Contact</div>
         </div>
-        <div className='cursor-pointer mr-5 font-semibold rounded-3xl p-3 bg-gradient-to-r from-purple-700 via-pink-500 to-orange-600 hover:scale-105 transition duration-300'>
+        <div className='text-white cursor-pointer mr-5 font-semibold rounded-3xl p-3 bg-gradient-to-r from-purple-700 via-pink-500 to-orange-600 hover:scale-105 transition duration-300'>
             Connect With me
         </div>  
     </div>

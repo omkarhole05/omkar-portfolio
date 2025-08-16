@@ -1,71 +1,87 @@
-import React from 'react'
+import React from "react";
+import { GraduationCap } from "lucide-react";
+
+const educationData = [
+  {
+    title: "10th",
+    institute: "Shree Shahaji High School, Supe",
+    year: "2019 - 2020",
+    score: "96%",
+    file: "ssc.pdf",
+  },
+  {
+    title: "11th",
+    institute: "Vidya Pratishthan College, Baramati",
+    year: "2020 - 2021",
+    score: "91%",
+    file: "11th.pdf",
+  },
+  {
+    title: "12th",
+    institute: "Vidya Pratishthan College, Baramati",
+    year: "2021 - 2022",
+    score: "81%",
+    file: "12th.pdf",
+  },
+  {
+    title: "1st Year",
+    institute: "Sinhgad Academy of Engineering, Kondhwa",
+    year: "2022 - 2023",
+    score: "8.7 CGPA",
+    file: "1st.pdf",
+  },
+  {
+    title: "2nd Year",
+    institute: "Sinhgad Academy of Engineering, Kondhwa",
+    year: "2023 - 2024",
+    score: "8.7 CGPA",
+    file: "2nd.pdf",
+  },
+  {
+    title: "3rd Year",
+    institute: "Sinhgad Academy of Engineering, Kondhwa",
+    year: "2024 - 2025",
+    score: "8.9 CGPA",
+    file: "3rd.pdf",
+  },
+];
 
 function Education() {
-    return (
-        <>
-            <div className='flex flex-col items-center justify-center h-screen '>
-                <div className='space-y-8'>
-                    <div className='border-b-1 h-15 w-270 rounded-full flex flex-row justify-between items-center p-5'>
-                        <div className='font-bold text-xl  '>10th</div>
-                        <div className='text-sm'>Shree shahaji high school,Supe</div>
-                        <div className='text-sm'>2019-2020</div>
-                        <div className='font-semibold text-lg'>96%</div>
-                        <a href="ssc.pdf" target="_blank"className='cursor-pointer text-sm
-                        text-yellow-400 underline' >View Result</a>
-                    </div>
+  return (
+    <div className="h-screen flex flex-col items-center py-8 px-6">
+      <h1 className="text-6xl font-bold text-gray-800 mb-12 flex items-center gap-3">
+        <GraduationCap className="w-17 h-17 text-yellow-500" />
+        Education
+      </h1>
 
-                    <div className='border-b-1 h-15 w-270 rounded-full flex flex-row justify-between items-center p-5'>
-                        <div className='font-bold text-xl'>11th</div>
-                        <div className='text-sm'>Vidya Pratishthan college,Baramati</div>
-                        <div className='text-sm'>2020-2021</div>
-                        <div className='font-semibold text-lg'>91%</div>
-                        <a href="11th.pdf" target="_blank"className='cursor-pointer text-sm text-yellow-400 underline'>View Result</a>
-                    </div>
-
-                    <div className='border-b-1 h-15 w-270 rounded-full flex flex-row justify-between items-center p-5'>
-                        <div className='font-bold text-xl'>12th</div>
-                        <div className='text-sm '>Vidya Pratishthan college,Baramati</div>
-                        <div className='text-sm'>2021-2022</div>
-                        <div className='font-semibold text-lg'>81%</div>
-                        <a href="11th.pdf" target="_blank"className='cursor-pointer text-sm text-yellow-400 underline'>View Result</a>
-                    </div>
-
-                    <div className='border-b-1 h-15 w-270 rounded-full flex flex-row justify-between items-center p-5'>
-                        <div className='font-bold text-xl'>1st Year</div>
-                        <div className='text-sm'>Sinhgad academy of engg,Kondhwa</div>
-                        <div className='text-sm'>2022-2023</div>
-                        <div className='font-semibold text-lg'>8.67</div>
-                        <a href="11th.pdf" target="_blank"className='cursor-pointer text-sm text-yellow-400 underline'>View Result</a>
-                    </div>
-
-                    <div className='border-b-1 h-15 w-270 rounded-full flex flex-row justify-between items-center p-5'>
-                        <div className='font-bold text-xl'>2nd Year</div>
-                        <div className='text-sm'>Sinhgad academy of engg,Kondhwa</div>
-                        <div className='text-sm'>2023-2024</div>
-                        <div className='font-semibold text-lg'>8.77</div>
-                        <a href="11th.pdf" target="_blank"className='cursor-pointer text-sm text-yellow-400 underline'>View Result</a>
-                    </div>
-
-                    <div className='border-b-1 h-15 w-270 rounded-full flex flex-row justify-between items-center p-5'>
-                        <div className='font-bold text-xl'>3rd Year</div>
-                        <div className='text-sm'>Sinhgad academy of engg,Kondhwa</div>
-                        <div className='text-sm'>2024-2025</div>
-                        <div className='font-semibold text-lg'>8.89</div>
-                        <a href="11th.pdf" target="_blank"className='cursor-pointer text-sm text-yellow-400 underline'>View Result</a>
-                    </div>
-
-                    {/* <div className='border-b-1 h-15 w-250 rounded-full flex flex-row justify-between items-center p-5'>
-                        <div className='font-bold text-xl'>4th Year</div>
-                        <div className='text-sm'>Sinhgad academy of engg,Kondhwa</div>
-                        <div className='text-sm'>2025-2026</div>
-                        <div className='font-semibold text-sm text-red-500'>No Result</div>
-                        
-                        <div></div>
-                    </div> */}
-                </div>
+      {/* Grid with 2 columns on medium+ screens */}
+      <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-6">
+        {educationData.map((edu, idx) => (
+          <div
+            key={idx}
+            className="bg-white shadow-md rounded-2xl p-3 flex flex-col justify-between transition hover:shadow-xl hover:scale-[1.01]"
+          >
+            <div>
+              <h2 className="text-2xl font-semibold text-gray-800">{edu.title}</h2>
+              <p className="text-sm text-gray-500">{edu.institute}</p>
+              <p className="text-sm text-gray-400">{edu.year}</p>
             </div>
-        </>
-    )
+            <div className="flex flex-col mt-4 md:items-end">
+              <span className="text-lg font-bold text-gray-700">{edu.score}</span>
+              <a
+                href={edu.file}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-1 text-sm text-yellow-500 hover:text-yellow-600 underline"
+              >
+                View Result
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
 
-export default Education
+export default Education;
