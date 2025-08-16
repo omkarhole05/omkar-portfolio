@@ -1,5 +1,5 @@
 import React from "react";
-import { GraduationCap } from "lucide-react";
+import { ExternalLink, GraduationCap } from "lucide-react";
 
 const educationData = [
   {
@@ -50,7 +50,7 @@ function Education() {
   return (
     <div id="education" className="min-h-screen flex flex-col items-center py-20">
       <h1 className="text-6xl font-bold text-gray-800 mb-12 flex items-center gap-3">
-        <GraduationCap className="w-17 h-17 text-yellow-500" />
+        <GraduationCap className="w-17 h-17 " />
         Education
       </h1>
 
@@ -59,22 +59,22 @@ function Education() {
         {educationData.map((edu, idx) => (
           <div
             key={idx}
-            className=" bg-white shadow-md rounded-2xl p-3 flex flex-col justify-between transition hover:shadow-xl hover:scale-[1.01]"
+            className=" bg-white shadow-md rounded-2xl p-4 flex flex-col justify-between transition hover:shadow-xl hover:scale-[1.01]"
           >
             <div>
               <h2 className="text-2xl font-semibold text-gray-800">{edu.title}</h2>
               <p className="text-sm text-gray-500">{edu.institute}</p>
               <p className="text-sm text-gray-400">{edu.year}</p>
             </div>
-            <div className="flex flex-col mt-4 md:items-end">
-              <span className="text-lg font-bold text-gray-700">{edu.score}</span>
+            <div className="flex flex-col  md:items-end">
+              <span className="text-lg font-bold text-gray-700 mr-2">{edu.score}</span>
               <a
                 href={edu.file}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-1 text-sm text-yellow-500 hover:text-yellow-600 underline"
+                className=" text-sm bg-gray-200  rounded-full py-1 px-2 flex gap-1 items-center text-blue-600 hover:scale-105 transition duration-300 "
               >
-                View Result
+                <ExternalLink className="w-4 h-4" /><span className="text-gray-800">View Result</span>
               </a>
             </div>
           </div>

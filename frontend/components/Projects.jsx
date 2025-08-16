@@ -1,11 +1,11 @@
 import React from "react";
-import { ExternalLink, Folder, Github,  Projector,  User } from "lucide-react"; // optional icons
+import { ExternalLink, Folder, Github,  Projector,  User } from "lucide-react"; 
 
 const projects = [
   {
     title: "AgroAssist",
     description: "A farmer support portal built with MERN stack to provide crop insights, market prices, and weather updates.",
-    image: "agroAssist.png", // put your screenshot in public/projects
+    image: "agroAssist.png",
     live: "https://your-live-demo-link.com",
     github: "https://github.com/your-repo/agroassist",
   },
@@ -54,7 +54,7 @@ function Projects() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-1 text-sm text-blue-600 hover:text-blue-800"
                 >
-                  <span className="bg-gray-200 py-1 pr-4 pl-2 rounded-full flex gap-2 items-center">
+                  <span className="bg-gray-200 py-1 pr-4 pl-2 rounded-full flex gap-2 items-center ">
                     <Github className="w-4 h-4" />Github</span>
                 </a>
                 <a
@@ -63,7 +63,8 @@ function Projects() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-1 text-sm  hover:text-blue-800"
                 >
-                <span className="bg-gray-200 py-1 pr-4 pl-2 rounded-full flex gap-2 items-center"><ExternalLink className="w-4 h-4" />Live</span>
+                <span className="bg-gray-200 py-1 pr-4 pl-2 rounded-full flex gap-2 items-center">
+                  <ExternalLink className="w-4 h-4" />Live</span>
                 </a>
                 
               </div>

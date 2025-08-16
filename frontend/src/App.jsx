@@ -6,6 +6,7 @@ import About from '../components/About.jsx'
 import Education from '../components/Education.jsx'
 import Projects from '../components/Projects.jsx'
 import Skills from '../components/Skills.jsx'
+import ConnectMe from '../components/ConnectMe.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
       <Skills/>
       <Projects/>      
       <Education/>
+      <ConnectMe/>
     </>
   )
 }
