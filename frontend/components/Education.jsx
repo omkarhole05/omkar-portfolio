@@ -48,18 +48,18 @@ const educationData = [
 
 function Education() {
   return (
-    <div className="h-screen flex flex-col items-center py-8 px-6">
+    <div className="min-h-screen flex flex-col items-center py-8">
       <h1 className="text-6xl font-bold text-gray-800 mb-12 flex items-center gap-3">
         <GraduationCap className="w-17 h-17 text-yellow-500" />
         Education
       </h1>
 
       {/* Grid with 2 columns on medium+ screens */}
-      <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-6 ">
         {educationData.map((edu, idx) => (
           <div
             key={idx}
-            className="bg-white shadow-md rounded-2xl p-3 flex flex-col justify-between transition hover:shadow-xl hover:scale-[1.01]"
+            className=" bg-white shadow-md rounded-2xl p-3 flex flex-col justify-between transition hover:shadow-xl hover:scale-[1.01]"
           >
             <div>
               <h2 className="text-2xl font-semibold text-gray-800">{edu.title}</h2>

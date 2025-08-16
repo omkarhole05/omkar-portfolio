@@ -1,14 +1,14 @@
-import { User } from 'lucide-react'
+import { Contact, User } from 'lucide-react'
 import React from 'react'
 
 function About() {
     return (
         <>
-        <div className=' flex flex-col items-center justify-center h-screen'>
+        <div className=' flex flex-col items-center justify-center min-h-screen px-6'>
            
             <div className='flex flex-col items-center justify-center max-w-6xl'>
-                 <div className='mb-20 font-semibold text-6xl flex items-center gap-3
-            '><User  className="w-16 h-16"/>
+                 <div className='mb-20 font-semibold text-6xl flex items-center gap-2 text-gray-800
+            '><Contact  className="w-14 h-14 text-gray-800"/>
                 About Me</div>
             <div className='flex  flex-row items-center justify-center space-x-5'>
                 <div><img src="omkar_prof.jpg" alt="img" className='rounded-lg w-90'/></div>
@@ -48,7 +48,7 @@ function About() {
 
         
 
-        <div className=' w-full flex flex-row items-center justify-around space-x-60 mt-15'>
+        <div className=' w-full flex lg:flex-row flex-col items-center lg:justify-around justify-center lg:space-x-60 space-y-10 mt-15'>
             <div className='flex flex-col items-center justify-center space-y-2'>
                 <div className='bg-gradient-to-r from-blue-500 via-red-400 to-yellow-300  bg-clip-text text-transparent
                 text-4xl font-bold'>02+</div>

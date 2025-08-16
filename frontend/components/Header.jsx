@@ -3,12 +3,13 @@ import React from 'react'
 function Header() {
     return (
     <>
-    <div className='flex justify-center items-center mt-20 mb-20'>
+    <div className='flex justify-center items-center mt-10 min-h-screen px-6'>
         <div className='flex flex-col justify-center items-center space-y-5'>
 
-        <img src="user1.png" alt="user" className='h-60 w-60'/>
+        <img src="user1.png" alt="user" className='max-h-60 max-w-60'/>
         <div className=' text-5xl  flex flex-col justify-center items-center'>
-            <span className='font-bold text-6xl bg-gradient-to-r from-blue-500 via-red-400 to-yellow-300  bg-clip-text text-transparent'>I'm Omkar Hole,<br /></span>
+            <span className='font-bold text-6xl bg-gradient-to-r from-blue-500 via-red-400 to-yellow-300  bg-clip-text text-transparent'>
+                I'm Omkar Hole,<br /></span>
             <span className='font-semibold'>Web developer based in pune</span>
         <div className='text-sm mt-3 '> Hi I'm Omkar,a Computer Engineering student passionate about building modern web applications.</div>
         </div>
