@@ -7,14 +7,16 @@ function About() {
         <div className=' flex flex-col items-center justify-center min-h-screen px-6'>
            
             <div className='flex flex-col items-center justify-center max-w-6xl'>
+
                  <div className='mb-20 font-semibold text-6xl flex items-center gap-2 text-gray-800
             '><Contact  className="w-14 h-14 text-gray-800"/>
                 About Me</div>
-            <div className='flex  flex-row items-center justify-center space-x-5'>
+
+            <div className='flex  lg:flex-row flex-col items-center justify-center space-x-5'>
                 <div><img src="omkar_prof.jpg" alt="img" className='rounded-lg w-90'/></div>
 
                 <div className='space-y-5'>
-                    <div className='max-w-6xl'>I'm a passionate Computer Engineering student with a strong interest in web development and modern technologies.
+                    <div className='max-w-6xl text-wrap'>I'm a passionate Computer Engineering student with a strong interest in web development and modern technologies.
                    <br /> I love building clean, responsive user interfaces and solving real-world problems with code.
                     I'm experienced with Tailwind CSS, and RESTful APIs.
                     Always eager to learn and collaborate on impactful projects.</div>
