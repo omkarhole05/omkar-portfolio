@@ -4,7 +4,7 @@ import React from 'react'
 function About() {
     return (
         <>
-        <div className=' flex flex-col items-center justify-center min-h-screen px-6'>
+        <div id='about' className=' flex flex-col items-center justify-center min-h-screen py-20 px-6 w-full'>
            
             <div className='flex flex-col items-center justify-center max-w-6xl'>
 

@@ -48,7 +48,7 @@ const educationData = [
 
 function Education() {
   return (
-    <div className="min-h-screen flex flex-col items-center py-8">
+    <div id="education" className="min-h-screen flex flex-col items-center py-20">
       <h1 className="text-6xl font-bold text-gray-800 mb-12 flex items-center gap-3">
         <GraduationCap className="w-17 h-17 text-yellow-500" />
         Education
