@@ -28,7 +28,7 @@ const projects = [
 function Projects() {
   return (
     <div id="projects" className="min-h-screen py-20 px-6 flex flex-col items-center ">
-      <h1 className="flex items-center text-6xl font-bold text-gray-800 mb-20 gap-2">
+      <h1 className="flex items-center md:text-6xl text-4xl font-bold text-gray-800 mb-20 gap-2">
         <Folder className="w-14 h-14"/>Projects</h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl w-full">

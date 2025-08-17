@@ -13,6 +13,7 @@ function App() {
 
   return (
     <>
+    <div className='w-full'>
       <Navbar/>
       <Header/>
       <About/>
@@ -20,6 +21,7 @@ function App() {
       <Projects/>      
       <Education/>
       <ConnectMe/>
+      </div>
     </>
   )
 }

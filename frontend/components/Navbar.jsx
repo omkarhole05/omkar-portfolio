@@ -5,13 +5,13 @@ function Navbar() {
   return (
     <>
       <div className="fixed top-0 left-0 w-full shadow-sm z-50 bg-white/50 backdrop-blur-md">
-        <div className="flex justify-between items-center my-2 px-7">
-          <div className="flex gap-10">
+        <div className="flex justify-between items-center md:my-2 my-4 px-6 w-full">
+          <div className="flex md:gap-10 gap-9 font-semibold">
             <div className=" cursor-pointer hover:scale-110 transition duration-300">
               <AnchorLink href="#home">Home</AnchorLink>
             </div>
             <div className="cursor-pointer hover:scale-110 transition duration-300">
-              <AnchorLink href="#about">About me</AnchorLink>
+              <AnchorLink href="#about">About Me</AnchorLink>
             </div>
             <div className="cursor-pointer hover:scale-110 transition duration-300">
               <AnchorLink href="#education">Education</AnchorLink>
@@ -19,7 +19,7 @@ function Navbar() {
             <div className="cursor-pointer hover:scale-110 transition duration-300">
               <AnchorLink href="#skills">Skills</AnchorLink>
             </div>
-            <div className="cursor-pointer hover:scale-110 transition duration-300">
+            <div className="cursor-pointer hover:scale-110 transition duration-300 hidden md:block">
               <AnchorLink href="#projects">Projects</AnchorLink>
             </div>
           </div>

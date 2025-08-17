@@ -1,9 +1,10 @@
 @import "tailwindcss";
 
 
-
 body{
+    
     height:100vh;
+    /* width:min-content; */
     background: #f3f4f6;
     color: #1f2937;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

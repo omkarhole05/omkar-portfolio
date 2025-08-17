@@ -43,7 +43,7 @@ const skillsData = [
 function Skills() {
     return (
     <div id="skills" className="min-h-screen flex flex-col items-center py-25 px-6">
-        <h1 className="text-6xl font-bold text-gray-800 mb-20 flex items-center gap-3">
+        <h1 className="md:text-6xl text-4xl font-bold text-gray-800 mb-20 flex items-center gap-3">
             <Code2 className="w-15 h-15"/>Skills
         </h1>
 
