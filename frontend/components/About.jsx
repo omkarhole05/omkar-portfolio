@@ -25,24 +25,24 @@ function About() {
                             Driven by curiosity, I turn ideas into seamless digital experiences.</div>
 
                     <div className=' md:max-w-2xl space-y-3 w-full bg-white shadow-md rounded-2xl p-3'>
-                        <div className=' flex items-center flex-row md:space-x-5 font-semibold md:text-lg text-md gap-10'>
+                        <div className=' flex items-center flex-row md:space-x-5 font-semibold md:text-lg text-md md:gap-10 gap-14'>
                             <div className=''>HTML</div>
-                            <div className='md:w-120 w-55 h-2 rounded-xl bg-gradient-to-r from-purple-700 via-pink-500 to-orange-500'></div>
+                            <div className='md:w-120 w-50 h-2 rounded-xl bg-gradient-to-r from-purple-700 via-pink-500 to-orange-500'></div>
                         </div>
 
-                        <div className='flex flex-row items-center space-x-5 font-semibold md:text-lg text-md  gap-15'>
+                        <div className='flex flex-row items-center space-x-5 font-semibold md:text-lg text-md md:gap-15 gap-13'>
                             <div className=''>CSS</div>
-                            <div className='md:w-90 w-45 h-2 rounded-xl bg-gradient-to-r from-purple-700 via-pink-500 to-orange-500'></div>
+                            <div className='md:w-90 w-40 h-2 rounded-xl bg-gradient-to-r from-purple-700 via-pink-500 to-orange-500'></div>
                         </div>
 
                         <div className='flex flex-row items-center space-x-5 font-semibold md:text-lg text-md gap-4'>
                             <div className=''>React JS</div>
-                            <div className='md:w-70 w-35 h-2 rounded-xl bg-gradient-to-r from-purple-700 via-pink-500 to-orange-500'></div>
+                            <div className='md:w-70 w-30 h-2 rounded-xl bg-gradient-to-r from-purple-700 via-pink-500 to-orange-500'></div>
                         </div>
 
                         <div className='flex flex-row items-center space-x-5 font-semibold md:text-lg text-md'>
                             <div className=''>JavaScript</div>
-                            <div className='md:w-80 w-50 h-2 rounded-xl bg-gradient-to-r from-purple-700 via-pink-500 to-orange-500'></div>
+                            <div className='md:w-80 w-40 h-2 rounded-xl bg-gradient-to-r from-purple-700 via-pink-500 to-orange-500'></div>
                         </div>
                         
                     </div>

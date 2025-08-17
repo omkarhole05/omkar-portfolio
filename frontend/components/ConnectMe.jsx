@@ -6,7 +6,7 @@ function ConnectMe() {
     const [result, setResult] = React.useState("");
 
     const handleSubmit = () => {
-        alert("Message submitted");
+        alert("Message submitted Succesfully");
     };
 
     const onSubmit = async (event) => {

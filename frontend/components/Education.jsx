@@ -14,14 +14,14 @@ const educationData = [
     institute: "Vidya Pratishthan College, Baramati",
     year: "2020 - 2021",
     score: "91%",
-    file: "11th.pdf",
+    file: "ssc.pdf",
   },
   {
     title: "12th",
     institute: "Vidya Pratishthan College, Baramati",
     year: "2021 - 2022",
     score: "81%",
-    file: "12th.pdf",
+    file: "hsc.jpg",
   },
   {
     title: "1st Year",
@@ -72,7 +72,8 @@ function Education() {
                 href={edu.file}
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" text-sm bg-gray-200  rounded-full py-1 px-2 flex gap-1 items-center text-blue-600 hover:scale-105 transition duration-300 "
+                className=" text-sm bg-gray-200
+                rounded-full py-1 px-2 flex flex-row gap-1 items-center text-blue-600 hover:scale-105 transition duration-300 "
               >
                 <ExternalLink className="w-4 h-4" /><span className="text-gray-800">View Result</span>
               </a>

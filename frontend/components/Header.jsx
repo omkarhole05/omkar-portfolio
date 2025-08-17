@@ -4,7 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 function Header() {
     return (
     <>
-    <div id='home' className=' w-full flex justify-center items-center mt-4 min-h-screen px-6'>
+    <div id='home' className=' w-full flex justify-center items-center md:mt-4  min-h-screen px-6'>
         <div className='flex flex-col justify-center items-center space-y-5 w-full max-w-2xl'>
 
         <img src="omkarR.png" alt="user" className='h-70  '/>

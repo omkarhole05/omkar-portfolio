@@ -6,22 +6,22 @@ const projects = [
     title: "AgroAssist",
     description: "A farmer support portal built with MERN stack to provide crop insights, market prices, and weather updates.",
     image: "agroAssist.png",
-    live: "https://your-live-demo-link.com",
-    github: "https://github.com/your-repo/agroassist",
+    live: "https://github.com/omkarhole05/agroAssist",
+    github: "https://github.com/omkarhole05/agroAssist",
   },
   {
     title: "Portfolio Website",
     description: "My personal portfolio showcasing skills, projects, and achievements with a modern responsive UI.",
     image: "portfolio1.png",
-    live: "https://your-portfolio-link.com",
+    live: "https://omkar-portfolio-delta.vercel.app/",
     github: "https://github.com/your-repo/portfolio",
   },
   {
     title: "DeepSeek Clone",
     description: "An AI-powered chat application inspired by DeepSeek, built with React and Express backend.",
     image: "deepseek.png",
-    live: "https://deepseek-clone-demo.com",
-    github: "https://github.com/your-repo/deepseek-clone",
+    live: "https://deepseek-ai-clone-git-main-holeom191-gmailcoms-projects.vercel.app/",
+    github: "https://github.com/omkarhole05/deepseek_ai-clone",
   },
 ];
 
