@@ -1,5 +1,6 @@
 import { Contact, User } from 'lucide-react'
 import React from 'react'
+import { motion } from "framer-motion";
 
 function About() {
     return (
@@ -13,18 +14,38 @@ function About() {
                 About Me</div>
 
             <div className=' w-full flex  md:flex-row flex-col items-center justify-center space-x-5'>
-                <div><img src="omkar_prof.jpg" alt="img" className='rounded-lg w-90 hidden md:block'/></div>
+                <div><motion.img
+                initial={{ opacity: 0, x: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                
+                src="omkar_prof.jpg" alt="img" className='rounded-lg w-90 hidden md:block'/></div>
 
                 <div className='space-y-5 '>
-                    <div className='w-full md:max-w-6xl '>I'm a passionate Computer Engineering student with a strong interest in web development and modern technologies.
+                    <motion.div
+                    initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                    
+                    className='w-full md:max-w-6xl '>I'm a passionate Computer Engineering student with a strong interest in web development and modern technologies.
                    I love building clean, responsive user interfaces and solving real-world problems with code.
                     I'm experienced with Tailwind CSS, and RESTful APIs.
-                    Always eager to learn and collaborate on impactful projects.</div>
+                    Always eager to learn and collaborate on impactful projects.</motion.div>
 
-                    <div className='mb-8  '>Passionate MERN stack developer creating impactful, user-friendly web solutions.
-                            Driven by curiosity, I turn ideas into seamless digital experiences.</div>
+                    <motion.div
+                    initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                    
+                    className='mb-8  '>Passionate MERN stack developer creating impactful, user-friendly web solutions.
+                            Driven by curiosity, I turn ideas into seamless digital experiences.</motion.div>
 
-                    <div className=' md:max-w-2xl space-y-3 w-full bg-white shadow-md rounded-2xl p-3'>
+                    <motion.div
+                    initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                    
+                    className=' md:max-w-2xl space-y-3 w-full bg-white shadow-md rounded-2xl p-3'>
                         <div className=' flex items-center flex-row md:space-x-5 font-semibold md:text-lg text-md md:gap-10 gap-14'>
                             <div className=''>HTML</div>
                             <div className='md:w-120 w-50 h-2 rounded-xl bg-gradient-to-r from-purple-700 via-pink-500 to-orange-500'></div>
@@ -45,13 +66,17 @@ function About() {
                             <div className='md:w-80 w-40 h-2 rounded-xl bg-gradient-to-r from-purple-700 via-pink-500 to-orange-500'></div>
                         </div>
                         
-                    </div>
+                    </motion.div>
                 </div>
             </div>
 
         
 
-        <div className=' w-full flex flex-row  items-center justify-around  md:space-x-80  mt-15'>
+        <motion.div
+        initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+        className=' w-full flex flex-row  items-center justify-around  md:space-x-80  mt-15'>
             <div className=' flex flex-col md:items-center justify-center gap-2'>
                 <div className='bg-gradient-to-r from-blue-500 via-red-400 to-yellow-300  bg-clip-text text-transparent
                 text-4xl font-bold'>02+</div>
@@ -70,7 +95,7 @@ function About() {
                 <div className='text-sm'>HAPPY CLIENTS</div>
             </div>
 
-        </div>
+        </motion.div>
         </div>
         </div>
         </>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Code2, Database, Wrench, Monitor, Hammer, Code, CodeSquare } from "lucide-react";
-
+import { motion } from "framer-motion";
 const skillsData = [
 {
     category: "Frontend",
@@ -49,8 +49,11 @@ function Skills() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full max-w-6xl">
         {skillsData.map((skill, idx) => (
-            <div
+            <motion.div
                 key={idx}
+            initial={{ opacity: 0, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: idx * 0.1 }} // staggered animation
                 className="bg-white shadow-md rounded-2xl p-6 flex flex-col items-center text-center transition hover:shadow-xl hover:scale-[1.03]"
             >
             {skill.icon}
@@ -71,7 +74,7 @@ function Skills() {
                 </div>
             ))}
             </div>
-            </div>
+            </motion.div>
         ))}
         </div>
     </div>

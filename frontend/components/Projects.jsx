@@ -1,5 +1,6 @@
 import React from "react";
 import { ExternalLink, Folder, Github,  Projector,  User } from "lucide-react"; 
+import { motion } from "framer-motion";
 
 const projects = [
   {
@@ -33,8 +34,12 @@ function Projects() {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl w-full">
         {projects.map((project, idx) => (
-          <div 
+          <motion.div 
             key={idx}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: idx * 0.2 }} // stagger effect
+            
             className="bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-xl"
           >
             <img
@@ -70,7 +75,7 @@ function Projects() {
               </div>
                </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

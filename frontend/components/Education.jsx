@@ -1,6 +1,6 @@
 import React from "react";
 import { ExternalLink, GraduationCap } from "lucide-react";
-
+import { motion } from "framer-motion";
 const educationData = [
   {
     title: "10th",
@@ -57,8 +57,12 @@ function Education() {
       {/* Grid with 2 columns on medium+ screens */}
       <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-6 ">
         {educationData.map((edu, idx) => (
-          <div
+          <motion.div
             key={idx}
+            initial={{ opacity: 0, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: idx * 0.1 }}
+
             className=" bg-white shadow-md rounded-2xl p-4 flex flex-col justify-between transition hover:shadow-xl hover:scale-[1.01]"
           >
             <div>
@@ -78,7 +82,7 @@ function Education() {
                 <ExternalLink className="w-4 h-4" /><span className="text-gray-800">View Result</span>
               </a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

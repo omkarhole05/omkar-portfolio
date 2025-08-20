@@ -1,6 +1,7 @@
 import React from "react";
 import { Mail, Github, Linkedin, User } from "lucide-react";
 import useState from "react";
+import { motion } from "framer-motion";
 
 function ConnectMe() {
     const [result, setResult] = React.useState("");
@@ -76,7 +77,7 @@ return (
         </div>
 
         {/* Right Column */}
-        <div className="md:w-1/2 bg-blue-50 p-8 md:p-12 flex flex-col items-center justify-center gap-6">
+        <div className="md:w-1/2 bg-gradient-to-r from-blue-200/50 via-purple-200/50 to-pink-200/50 backdrop-blur-lg p-8 md:p-12 flex flex-col items-center justify-center gap-6">
             <h3 className="text-2xl font-semibold mb-4">Connect With Me</h3>
                 <p className="text-gray-700 text-center mb-6">
                     I’m open to collaborations, projects, and opportunities. Reach out
@@ -85,7 +86,11 @@ return (
 
         <div className="flex gap-8 text-3xl">
             {/* whatsapp */}
-            <a
+            <motion.a
+                initial={{ opacity: 0, x: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.9, delay: 0.1 }}
+
                 href="https://wa.me/8484905853"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -93,10 +98,14 @@ return (
 
                 <img src="https://cdn-icons-png.flaticon.com/128/15707/15707820.png"/>
 
-            </a>
+            </motion.a>
 
             {/* gmail */}
-            <a
+            <motion.a
+
+                initial={{ opacity: 0, x: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.9, delay: 0.2 }}
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=pvtomkarhole05@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -104,10 +113,14 @@ return (
 
                 <img src="https://cdn-icons-png.flaticon.com/128/5968/5968534.png"/>
 
-            </a>
+            </motion.a>
 
             {/* Github */}
-            <a
+            <motion.a
+                initial={{ opacity: 0, x: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.9, delay: 0.3 }}
+
                 href="https://github.com/omkarhole05"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -115,10 +128,13 @@ return (
             
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
         
-            </a>
+            </motion.a>
 
             {/* linkedin */}
-            <a
+            <motion.a
+                initial={{ opacity: 0, x: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.9, delay: 0.4 }}
                 href="https://www.linkedin.com/in/omkar-hole/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -126,7 +142,7 @@ return (
 
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
 
-            </a>
+            </motion.a>
 
             </div>
         </div>
