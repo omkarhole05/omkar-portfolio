@@ -4,7 +4,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 function Navbar() {
   return (
     <>
-      <div className="fixed top-0 left-0 w-full shadow-sm z-50 bg-white/50 backdrop-blur-md">
+      <div className="fixed top-0 left-0 w-full shadow-sm z-50 bg-white/40 backdrop-blur-md">
         <div className="flex justify-between items-center md:my-2 my-4 px-6 w-full">
           <div className="flex md:gap-10 gap-9 font-semibold">
             <div className=" cursor-pointer hover:scale-110 transition duration-300">
