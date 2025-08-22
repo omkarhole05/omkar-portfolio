@@ -77,7 +77,7 @@ return (
         </div>
 
         {/* Right Column */}
-        <div className="md:w-1/2     backdrop-blur-lg p-8 md:p-12 flex flex-col items-center justify-center gap-6">
+        <div className="md:w-1/2  bg-gradient-to-r from-blue-300/50 via-purple-300/50 to-pink-300/50 backdrop-blur-lg p-8 md:p-12 flex flex-col items-center justify-center gap-6">
             <h3 className="text-2xl font-semibold mb-4">Connect With Me</h3>
                 <p className="text-gray-700 text-center mb-6">
                     I’m open to collaborations, projects, and opportunities. Reach out
